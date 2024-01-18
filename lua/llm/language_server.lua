@@ -124,6 +124,7 @@ function M.get_completions(callback)
   params.tokens_to_clear = config.get().tokens_to_clear
   params.api_token = config.get().api_token
   params.request_params = config.get().query_params
+  params.requestParams = config.get().query_params
   params.request_params.do_sample = config.get().query_params.temperature > 0
   params.fim = config.get().fim
   params.tokenizer_config = config.get().tokenizer
