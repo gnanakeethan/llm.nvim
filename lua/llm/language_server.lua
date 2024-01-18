@@ -121,7 +121,7 @@ function M.get_completions(callback)
 
   local params = lsp.util.make_position_params()
   params.model = utils.get_model()
-  params.tokens_to_clear = config.get().tokens_to_clear
+  params.tokensToClear = config.get().tokens_to_clear
   params.api_token = config.get().api_token
   params.request_params = config.get().query_params
   params.requestParams = config.get().query_params
