@@ -127,11 +127,11 @@ function M.get_completions(callback)
   params.requestParams = config.get().query_params
   params.request_params.do_sample = config.get().query_params.temperature > 0
   params.fim = config.get().fim
-  params.tokenizer_config = config.get().tokenizer
-  params.context_window = config.get().context_window
-  params.tls_skip_verify_insecure = config.get().tls_skip_verify_insecure
+  params.tokenizerConfig = config.get().tokenizer
+  params.contextWindow = config.get().context_window
+  params.tlsSkipVerifyInsecure = config.get().tls_skip_verify_insecure
   params.adaptor = config.get().adaptor
-  params.request_body = config.get().request_body
+  params.requestBody = config.get().request_body
   params.ide = "neovim"
 
   local client = lsp.get_client_by_id(M.client_id)
